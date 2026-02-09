@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(249, 248, 246);
+  padding: 2rem;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+.logo {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.logo::first-letter {
+  color: rgb(98, 98, 96);
+  font-size: 1.5rem;
+  margin: 0.2rem;
+  text-shadow: 2px 2px 5px rgba(179, 115, 115, 0.5);
+
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 20px rgba(179, 115, 115, .5);
+
+}
+
+
+li {
+  display: inline-block;
+  margin: 1rem;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+}
+
+li:hover {
+  transform: scale(1.1);
+  color: rgb(98, 98, 96);
+  text-shadow: 2px 2px 20px rgb(98, 98, 96);
+}
+
+
+/* ------ Main -------  */
+
+main {
+  background: rgb(239, 233, 227);
+  padding: 1rem;
+}
+
+.hero {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+  border: 2px solid white;
+  padding: 4rem;
+  min-height: 50vh;
+
+}
+
+.hero h2,
+h5 {
+  color: rgb(98, 98, 96);
+  margin-bottom: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  background: rgb(98, 98, 96);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(179, 115, 115, .5);
+}
+
+
+
+
+/* ------- ABOUT SECTION ------  */
+
+.about {
+  text-align: center;
+  margin-top: 3rem;
+  color: rgb(98, 98, 96);
+  margin: 1rem;
+  border: 1px solid white;
+  min-height: 50vh;
+}
+
+.about h2 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.About-me {
+  font-size: 1rem;
+}
+
+.About-Education {
+  font-size: 1.5rem;
+
+
+}
+
+
+/* ------ SKILL -----  */
+
+.skills {
+  text-align: center;
+  margin-top: 3rem;
+  color: rgb(98, 98, 96);
+  margin: 1rem;
+  min-height: 50vh;
+}
+
+.skills h2 {
+  font-size: 2rem;
+}
+
+.skills p {
+  font-size: 1.5rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin: 2rem;
+}
+
+.card1 {
+  border: 2px solid white;
+  margin: 1rem;
+  height: 5rem;
+  width: 15rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card1:hover {
+  transform: scaleY(1.1);
+  box-shadow: 2px 2px 5px rgba(179, 115, 115, .5);
+}
+
+.card1 h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+
+}
+
+
+
+
+
+
+/* ----- Project ----  */
+
+
+.Pro h2 {
+  color: rgb(98, 98, 96);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.project-1 {
+  border: 2px solid white;
+  margin: 1rem;
+  height: 20rem;
+  width: 20rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-1:hover {
+  transform: scaleY(1.1);
+  box-shadow: 2px 2px 5px rgba(179, 115, 115, .5);
+}
+
+.project-1 h2 {
+  margin: 2rem;
+  font-size: 2rem;
+
+}
+
+.project-1 p {
+  margin: 3rem;
+}
+
+
+/* ----- Contact -----  */
+.contact {
+  min-height: 50vh;
+  text-align: center;
+  border: 10px solid white;
+}
+
+.contact h2 {
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+.contact input,
+textarea {
+  height: 2rem;
+  width: 15rem;
+  margin: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* ------ FOOTR -----  */
+
+footer {
+  background: rgb(217, 207, 199);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    padding: 1rem;
+  }
+
+
+  .card,
+  .project {
+    flex-direction: column;
+  }
+
+  .card1,
+  .project-1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .hero {
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
